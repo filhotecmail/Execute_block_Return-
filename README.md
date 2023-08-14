@@ -1,3 +1,5 @@
+![image](https://github.com/filhotecmail/Execute_block_Return-/assets/18727307/1e9243ff-461b-4dd4-92ba-fd2c498d9e02)
+
 # On the Fly 
 
 "Execute Block - on-the-fly" é um jeito bacana de executar códigos de banco de dados de forma dinâmica. É como se a gente escrevesse um conjunto de instruções em um bloco especial chamado "EXECUTE BLOCK", que depois é executado. A parte legal é que a gente não precisa criar algo já definido, como um plano ou uma receita. É ótimo para fazer tarefas específicas que não são complexas o suficiente para criar um "plano" grande, mas que ainda precisam ser feitas.
