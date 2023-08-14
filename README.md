@@ -1,3 +1,23 @@
+# On the Fly 
+
+"Execute Block - on-the-fly" é um jeito bacana de executar códigos de banco de dados de forma dinâmica. É como se a gente escrevesse um conjunto de instruções em um bloco especial chamado "EXECUTE BLOCK", que depois é executado. A parte legal é que a gente não precisa criar algo já definido, como um plano ou uma receita. É ótimo para fazer tarefas específicas que não são complexas o suficiente para criar um "plano" grande, mas que ainda precisam ser feitas.
+
+Pense nisso como uma forma de fazer um script momentâneo, como uma listinha de coisas para fazer, só que diretamente no banco de dados. Assim, dá para executar rapidinho algumas ações sem criar algo fixo e permanente.
+
+Imagine que você está dizendo para o banco de dados: "Ei, vou escrever um bloquinho de coisas para você fazer. Vou te dar as instruções e você executa tudo sem precisar guardar essas instruções para sempre".
+
+Esse bloquinho é bem fácil de usar, você coloca as instruções dentro do bloco usando as palavras mágicas "BEGIN" (começar) e "END" (terminar). Pode incluir coisas como dizer o que selecionar, inserir, atualizar ou apagar. Você até pode cuidar de situações inesperadas, como quando algo não dá certo, tudo isso dentro desse bloquinho.
+
+Falando de uma forma mais científica aplicada a modelos computacionais , pode-se subentender que o compilador irá executar esses médodos isolados como uma sub-routine, e manterá a ordem cornológica top-down de execução.
+Isso é alinhado estaticamente a um único ponteiro para que a ordem de execução seja garantida e executada por uma chamada anônima, em Thread, isolada para não concorrer com outras requisições.
+
+Você não precisa executar literalmente "In Autonomous Transaction", para que isso seja executado.
+
+# Aplicabilidade
+  Posso ilustrar vários cenários de aplicabilidade na vida real para problemas trasncritos para modelos computacionais, dentre eles estão ligados problemas dinâmicos, aqueles que não dependem que explicitamente estejam sendo informados por procedimentos armazenados.
+Como por exemplo, comitar uma venda , e executar diversas instruções de tratamentos e retornar dados consistentes e transacionados.
+Outro exemplo, é inferir parametro do tipo blob text em formato de arquivo, bytes ou hexadecimal e inserir um conjunto arbitrário de dados simultaneamente, isolado , consistente e concomitante, tal técnica é conhecida como Array DML statement.
+
 # Execute block with Return
   
   Execução de Return Block com Retorno de resultado - SQL
